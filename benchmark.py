@@ -19,6 +19,6 @@ for i in range(BENCH_COUNT):
     break
 t_after = time.time() * 1000
 
-print "SET/GET (%dtimes): %fms" % (BENCH_COUNT, t_after-t_before)
+print "SET/GET (%dtimes): %fms, avg: %fms" % (BENCH_COUNT, t_after-t_before, (t_after-t_before)/BENCH_COUNT)
 
 
